@@ -393,38 +393,45 @@ html {
 
 /* ---------------------------Responsive--------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   /* Navbar */
 
   .header {
-    height: 2rem;
+    height: 9rem;
   }
   .logo {
-    font-size: 1.5rem;
+    font-size: 5rem;
   }
   .header nav {
     position: absolute;
     right: 0;
     flex-direction: column;
     background-color: var(--primary2);
-    top: 44px;
+    top: 10rem;
     margin-right: 0;
     align-items: center;
     justify-content: space-evenly;
     height: 30vh;
-    width: 6rem;
+    width: 16rem;
     background-color: #0000008c;
     transform: translateX(100%);
     transition: all 1s;
   }
   .header nav a {
-    font-size: 0.9rem;
+    font-size: 2.5rem;
   }
   .header .slide {
     transform: translateX(0);
   }
+  .burger-menu {
+    height: 40px;
+    width: 40px;
+    right: 8rem;
+  }
   .burger-menu span {
     display: block;
+    width: 48px;
+    height: 5px;
   }
   .home-main {
     height: 100vh;
