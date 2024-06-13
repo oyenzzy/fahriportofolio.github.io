@@ -638,7 +638,7 @@ html {
   }
   .project-div div a {
     width: 10rem;
-    height: 2rem;
+    height: 3rem;
     font-size: 2rem;
     display: flex;
     justify-content: center;
@@ -721,7 +721,6 @@ html {
     border: 2.5px solid var(--text);
     border-radius: 12px;
     font-size: 2rem;
-    color: var(--text);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
