@@ -393,7 +393,7 @@ html {
 
 /* ---------------------------Responsive--------------------------- */
 
-@media screen and (max-width: 634px) {
+@media screen and (max-width: 900px) {
   /* Navbar */
 
   .header {
