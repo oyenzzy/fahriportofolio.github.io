@@ -433,6 +433,27 @@ html {
     width: 48px;
     height: 5px;
   }
+  .burger-menu span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .burger-menu span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .burger-menu input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg);
+    translate: 0px 1.2px;
+  }
+
+  .burger-menu input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg);
+  }
+
+  .burger-menu input:checked ~ span:nth-child(3) {
+    scale: 0;
+    opacity: 0;
+  }
   .home-main {
     height: 100vh;
     display: flex;
@@ -441,11 +462,13 @@ html {
     align-items: center;
   }
   .home-main div {
-    margin-bottom: 4rem;
+    margin-bottom: 28rem;
+    padding-left: 2rem;
   }
   .home-main div h1 {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 5rem;
+    padding-left: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -460,18 +483,18 @@ html {
   }
   .home-main div p {
     color: #ffffff;
-    font-size: 0.7rem;
+    font-size: 2rem;
+    padding: 0 1rem 0 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
   }
   .home-main img {
-    margin-bottom: -10rem;
-    padding-bottom: -100rem;
-    width: 20rem;
+    margin-top: 20rem;
+    width: 40rem;
     border-radius: 50%;
   }
-  br {
+  .home-main div p br {
     display: none;
   }
 
@@ -485,12 +508,13 @@ html {
   .about h1 {
     width: 100%;
     height: 2rem;
-    padding-top: 3rem;
+    padding-top: 14rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -501,7 +525,7 @@ html {
     flex-wrap: wrap;
   }
   .about-pic img {
-    height: 4rem;
+    height: 12rem;
     margin: 1rem;
     border-radius: 4px;
   }
@@ -513,25 +537,25 @@ html {
     margin-top: -4rem;
   }
   .about-div h1 {
-    margin-top: 1rem;
+    margin-top: -7rem;
   }
   .about-div div {
     background-color: #ffffff;
-    width: 10rem;
-    height: 13rem;
+    width: 20rem;
+    height: 28rem;
     margin: 1rem;
     border-radius: 8px;
   }
   .about-div div div {
-    width: 8rem;
-    height: 2rem;
+    width: 19rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .about-div div div svg {
-    width: 2rem;
-    height: 2rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 2px;
     background-color: #09ff00ab;
     display: flex;
@@ -539,13 +563,13 @@ html {
   }
   .about-div div h3 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 2.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   .about-div div p {
-    font-size: 0.8rem;
+    font-size: 1.8rem;
     text-align: center;
     margin: 0.8rem 10px 0 10px;
   }
@@ -562,12 +586,13 @@ html {
   .project h1 {
     width: 100%;
     height: 2rem;
-    padding-top: 3rem;
+    padding-top: 14rem;
+    padding-bottom: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -576,49 +601,50 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 20rem;
+    width: 44rem;
     height: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border-radius: 8px;
     background-color: #ffffff;
   }
   .project-div div img {
-    margin-top: 1rem;
-    width: 18rem;
-    height: 10rem;
+    margin-top: 2rem;
+    width: 36rem;
+    height: 20rem;
     border-radius: 2px;
   }
   .project-div div h2 {
-    margin-top: 1rem;
-    font-size: 1rem;
+    padding-top: 1rem;
+    font-size: 2.4rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   .tag h5 {
     width: auto;
-    font-size: 0.8rem;
-    margin: -0.6rem 0.2rem 0 0.2rem;
-    height: 0.9rem;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: -2rem;
+    height: 1.8rem;
     background-color: #00ff0062;
   }
   .project-div div p {
-    font-size: 0.9rem;
+    font-size: 2rem;
     text-align: center;
-    /* margin-top: -0.1rem;
-    margin-bottom: 1rem; */
+    margin-top: -0.8rem;
+    margin-bottom: 1rem;
     margin: -0.1rem 0.5rem 1rem 0.5rem;
   }
   .project-div div a {
-    width: 5rem;
-    height: 1.1rem;
-    font-size: 0.9rem;
+    width: 10rem;
+    height: 2rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    margin-right: -7rem;
+    margin-right: -25rem;
     color: #000000;
     background-color: var(--text);
     font-family: "Poppins", sans-serif;
@@ -637,12 +663,12 @@ html {
   }
   .contact div h1 {
     width: 100%;
-    height: 7rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -652,7 +678,7 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    width: 30rem;
+    width: 50rem;
     height: auto;
     background-color: black;
   }
@@ -664,34 +690,37 @@ html {
   }
   .contact-name input,
   .contact-email input {
-    width: 25rem;
-    height: 2.5rem;
+    width: 45rem;
+    height: 4.5rem;
     padding-left: 1rem;
     border: 2.5px solid var(--text);
-    border-radius: 4px;
+    border-radius: 8px;
+    font-size: 2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
 
   .contact-text textarea {
-    width: 25rem;
-    height: 8rem;
+    width: 45rem;
+    height: 14rem;
     border: 2.5px solid var(--text);
-    border-radius: 4px;
+    border-radius: 8px;
     padding-top: 1rem;
     padding-left: 1rem;
-    margin-top: 0.8rem;
+    margin-top: 2rem;
+    font-size: 2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   .contact-form button {
     width: 8rem;
-    height: 2.5rem;
+    height: 3.5rem;
     margin: 1rem 0 2.5rem 0;
     border: 2.5px solid var(--text);
-    border-radius: 4px;
+    border-radius: 12px;
+    font-size: 2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
