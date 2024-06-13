@@ -542,13 +542,13 @@ html {
   .about-div div {
     background-color: #ffffff;
     width: 20rem;
-    height: 28rem;
+    height: 30rem;
     margin: 1rem;
     border-radius: 8px;
   }
   .about-div div div {
     width: 19rem;
-    height: 7rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
