@@ -461,8 +461,11 @@ html {
   .home-main img {
     margin-bottom: -10rem;
     padding-bottom: -100rem;
-    width: 15rem;
+    width: 20rem;
     border-radius: 50%;
+  }
+  br {
+    display: none;
   }
 
   /* About */
@@ -544,6 +547,7 @@ html {
   .project-div {
     height: min-content;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 1rem;
     background-color: var(--primary1);
@@ -565,7 +569,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 13rem;
+    width: 20rem;
     height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -574,33 +578,35 @@ html {
   }
   .project-div div img {
     margin-top: 1rem;
-    width: 10rem;
-    height: 5rem;
+    width: 18rem;
+    height: 10rem;
+    border-radius: 2px;
   }
   .project-div div h2 {
     margin-top: 1rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
   .tag h5 {
     width: auto;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin: -0.6rem 0.2rem 0 0.2rem;
-    height: 0.7rem;
+    height: 0.9rem;
     background-color: #00ff0062;
   }
   .project-div div p {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     text-align: center;
-    margin-top: -0.1rem;
-    margin-bottom: 1rem;
+    /* margin-top: -0.1rem;
+    margin-bottom: 1rem; */
+    margin: -0.1rem 0.5rem 1rem 0.5rem;
   }
   .project-div div a {
-    width: 3rem;
-    height: 0.7rem;
-    font-size: 0.6rem;
+    width: 5rem;
+    height: 1.1rem;
+    font-size: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -639,7 +645,7 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    width: 20rem;
+    width: 30rem;
     height: auto;
     background-color: black;
   }
@@ -651,7 +657,7 @@ html {
   }
   .contact-name input,
   .contact-email input {
-    width: 15rem;
+    width: 25rem;
     height: 2.5rem;
     padding-left: 1rem;
     border: 2.5px solid var(--text);
@@ -662,7 +668,7 @@ html {
   }
 
   .contact-text textarea {
-    width: 15rem;
+    width: 25rem;
     height: 8rem;
     border: 2.5px solid var(--text);
     border-radius: 4px;
