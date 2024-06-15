@@ -78,10 +78,10 @@ html {
 
 .burger-menu input {
   position: absolute;
-  width: 27px;
-  height: 23px;
-  left: -3px;
-  top: -3px;
+  width: 62px;
+  height: 43px;
+  left: -7px;
+  top: -2px;
   opacity: 0;
   cursor: pointer;
   z-index: 2;
