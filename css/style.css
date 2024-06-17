@@ -168,9 +168,31 @@ html {
   font-weight: 500;
   font-style: normal;
 }
+.resume {
+  margin-top: 1.5rem;
+  width: 12rem;
+  height: 2.5rem;
+  background-color: #1b1b1b;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 3px;
+  border: 1px solid var(--text);
+}
+.resume a {
+  color: var(--text);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 .home-main img {
   width: 20rem;
   border-radius: 50%;
+  transition: 0.5s ease-in;
+}
+.home-main img:hover {
+  scale: 104%;
 }
 
 /* ---------------------------About--------------------------- */
@@ -216,6 +238,10 @@ html {
   height: 20rem;
   margin: 1rem;
   border-radius: 8px;
+  transition: 0.5s ease-in-out;
+}
+.about-div div:hover {
+  scale: 102%;
 }
 .about-div div div {
   width: 13rem;
@@ -573,6 +599,26 @@ html {
     text-align: center;
     margin: 0.8rem 10px 0 10px;
   }
+  .resume {
+    margin-top: 1.5rem;
+    padding-right: 1.8rem;
+    width: 16rem;
+    height: 4.5rem;
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid var(--text);
+  }
+  .resume a {
+    color: var(--text);
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
   /* My Project */
 
   .project-div {
