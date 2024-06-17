@@ -30,7 +30,7 @@ html {
   content: "";
   position: absolute;
   bottom: -5px;
-  height: 4px;
+  height: 2px;
   width: 100%;
   right: 0;
   background-color: #ffffff;
@@ -48,8 +48,6 @@ html {
 
 .header nav {
   width: 35rem;
-  font-size: 1.4rem;
-  padding: 0.5rem 7%;
   margin-right: -30rem;
   display: flex;
   justify-content: space-between;
@@ -60,13 +58,28 @@ html {
 }
 .header nav a {
   color: #ffffff;
-  transition: 0.5s;
+  font-size: 1.4rem;
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+.header nav a::before {
+  content: "";
+  position: absolute;
+  background-color: var(--text);
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: 0.5s ease-in-out;
+  transform: scale(0);
 }
 
 .header nav a:hover {
   color: var(--text);
 }
-
+.header nav a:hover::before {
+  transform: scale(100%);
+}
 .burger-menu {
   display: flex;
   flex-direction: column;
@@ -164,6 +177,7 @@ html {
 .home-main div p {
   color: #ffffff;
   font-size: 1.2rem;
+  text-indent: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -189,6 +203,7 @@ html {
 .home-main img {
   width: 20rem;
   border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgb(255, 115, 0);
   transition: 0.5s ease-in;
 }
 .home-main img:hover {
@@ -236,7 +251,11 @@ html {
   background-color: #ffffff;
   width: 15rem;
   height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem;
+  box-shadow: 2px 2px 5px 1px #000000;
   border-radius: 8px;
   transition: 0.5s ease-in-out;
 }
@@ -244,21 +263,24 @@ html {
   scale: 102%;
 }
 .about-div div div {
-  width: 13rem;
+  width: 3rem;
   height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about-div div div svg {
+.about-div div div i {
   border-radius: 2px;
-  background-color: #09ff00ab;
+  font-size: 2rem;
+  background-color: transparent;
   display: flex;
   justify-content: center;
 }
 .about-div div h3 {
   text-align: center;
   font-size: 1.2rem;
+  color: var(--text);
+  text-shadow: 1px 1px 1px #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -279,9 +301,9 @@ html {
 .project-div {
   height: min-content;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 1rem;
-  background-color: var(--primary1);
 }
 .project h1 {
   width: 100%;
@@ -308,9 +330,10 @@ html {
   background-color: #ffffff;
 }
 .project-div div img {
-  margin-top: 1rem;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  margin-top: 2rem;
   width: 20rem;
-  height: 10rem;
 }
 .project-div div h2 {
   margin-top: 1rem;
@@ -327,7 +350,6 @@ html {
 }
 .project-div div p {
   text-align: center;
-  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 .project-div div a {
@@ -407,11 +429,12 @@ html {
   font-style: normal;
 }
 .contact-form button {
-  width: 8rem;
+  width: 6rem;
   height: 2.5rem;
-  margin: 1rem 0 2.5rem 0;
+  margin: 0.5rem 0 2.5rem 0;
   border: 2.5px solid var(--text);
   border-radius: 4px;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -438,7 +461,7 @@ html {
     align-items: center;
     justify-content: space-evenly;
     height: 30vh;
-    width: 16rem;
+    width: 25rem;
     background-color: #0000008c;
     transform: translateX(100%);
     transition: all 1s;
