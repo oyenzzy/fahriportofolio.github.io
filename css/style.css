@@ -540,6 +540,10 @@ html {
     scale: 0;
     opacity: 0;
   }
+  .dark-white i {
+    font-size: 3rem;
+  }
+
   .home-main {
     height: 100vh;
     display: flex;
