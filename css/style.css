@@ -148,8 +148,8 @@ html {
 
 .dark-white {
   margin-right: 5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,10 +237,6 @@ html {
 }
 .home-main img:hover {
   scale: 104%;
-}
-
-.dark-white i {
-  font-size: 3.5rem;
 }
 
 /* ---------------------------About--------------------------- */
