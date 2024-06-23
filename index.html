@@ -25,43 +25,48 @@
   </head>
   <body>
     <!-- Navbar -->
-    <header class="header">
-      <a href="" class="logo">Fahri Fachrezzy</a>
+    <header class="header" id="header">
+      <a href="" class="logo" id="logo">Fahri Fachrezzy</a>
       <nav id="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#project">My Project</a>
-        <a href="#contact">Contact Me</a>
+        <a id="navHome" href="#home">Home</a>
+        <a id="navAbout" href="#about">About Me</a>
+        <a id="navProject" href="#project">My Project</a>
+        <a id="navContact" href="#contact">Contact Me</a>
       </nav>
       <div class="burger-menu" id="burger">
         <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+      </div>
+      <div class="dark-white">
+        <i class="fa-solid fa-moon" id="moon"></i>
       </div>
     </header>
     <!-- Home -->
     <section class="home" id="home">
       <main class="home-main">
         <div>
-          <h1>
+          <h1 id="homeH1">
             Hello,<br /><span>I Am <span>Fahri Fachrezzy</span></span>
           </h1>
-          <p>
+          <p id="homeP">
             creative front-end developer with more than +2 years of experience
             in
             <br />
             enterprise companies and startups. proficient in Python and
             Javascript, <br />passionate about UI/UX
           </p>
-          <div class="resume"><a href="">Download My Resume</a></div>
+          <div class="resume" id="resume">
+            <a href="">Download My Resume</a>
+          </div>
         </div>
         <img src="image/IMG_20240510_154831.jpg" alt="Logo" />
       </main>
     </section>
     <!-- About me -->
     <section class="about" id="about">
-      <h1>Skill</h1>
+      <h1 id="aboutH11">Skill</h1>
       <picture class="about-pic">
         <img src="image/html.jpg" alt="" />
         <img src="image/css.jpg" alt="" />
@@ -69,7 +74,7 @@
         <img src="image/python.jpg" alt="" />
       </picture>
       <div class="about-div">
-        <h1>Specialized In</h1>
+        <h1 id="aboutH12">Specialized In</h1>
         <div>
           <div>
             <i class="fa-solid fa-layer-group"></i>
@@ -104,9 +109,9 @@
     </section>
     <!-- My Project -->
     <section class="project" id="project">
-      <h1>My Project</h1>
+      <h1 id="projectH1">My Project</h1>
       <div class="project-div">
-        <div>
+        <div class="project-card">
           <img src="image/Screenshot 2024-06-12 233657.png" alt="" />
           <h2>Build Character Genshin impact</h2>
           <div class="tag">
@@ -122,7 +127,7 @@
           </p>
           <a href="https://oyenzzy.github.io/">See More</a>
         </div>
-        <div>
+        <div class="project-card">
           <img src="image/Screenshot 2024-06-13 000226.png" alt="" />
           <h2>Calculator</h2>
           <div class="tag">
@@ -139,9 +144,10 @@
     <!-- Contact Me -->
     <section id="contact" class="contact">
       <div>
-        <h1>Contact Me</h1>
+        <h1 id="contactH1">Contact Me</h1>
         <form
           class="contact-form"
+          id="contactForm"
           action="https://formspree.io/f/mvoeeqkb"
           method="POST"
         >

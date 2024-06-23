@@ -14,6 +14,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.black {
+  color: #ffffff;
+}
+.white {
+  color: #000000;
+}
+
 /* ---------------------------Header--------------------------- */
 
 .header {
@@ -29,11 +36,20 @@ html {
 .header::after {
   content: "";
   position: absolute;
-  bottom: -5px;
-  height: 2px;
+  bottom: -2px;
+  height: 3px;
   width: 100%;
   right: 0;
   background-color: #ffffff;
+}
+.header1::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  height: 4px;
+  width: 100%;
+  right: 0;
+  background-color: #000000;
 }
 
 .logo {
@@ -86,7 +102,7 @@ html {
   height: 20px;
   justify-content: space-between;
   position: relative;
-  right: 2rem;
+  left: 6rem;
 }
 
 .burger-menu input {
@@ -104,8 +120,7 @@ html {
   display: none;
   width: 24px;
   height: 2.5px;
-  background-color: #fff;
-  color: #ffffff;
+  background-color: #ffffff;
   border-radius: 3px;
   transition: all 0.5s;
 }
@@ -129,6 +144,20 @@ html {
 .burger-menu input:checked ~ span:nth-child(3) {
   scale: 0;
   opacity: 0;
+}
+
+.dark-white {
+  margin-right: 5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-white i {
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* ---------------------------Home--------------------------- */
@@ -191,7 +220,7 @@ html {
   justify-content: center;
   align-content: center;
   border-radius: 3px;
-  border: 1px solid var(--text);
+  border: 3px solid var(--text);
 }
 .resume a {
   color: var(--text);
@@ -250,7 +279,7 @@ html {
 .about-div div {
   background-color: #ffffff;
   width: 15rem;
-  height: 20rem;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,16 +347,18 @@ html {
   font-weight: 600;
   font-style: normal;
 }
-.project-div div {
+.project-card {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   width: 22rem;
   height: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
   background-color: #ffffff;
+  box-shadow: 1px 1px 5px 1px #000000;
 }
 .project-div div img {
   aspect-ratio: 2/1;
@@ -342,6 +373,9 @@ html {
   font-weight: 600;
   font-style: normal;
 }
+.tag {
+  display: flex;
+}
 .tag h5 {
   width: auto;
   margin: 0.2rem;
@@ -350,6 +384,7 @@ html {
 }
 .project-div div p {
   text-align: center;
+  height: 6rem;
   margin-bottom: 1rem;
 }
 .project-div div a {
@@ -360,6 +395,8 @@ html {
   align-items: center;
   margin-bottom: 1rem;
   margin-right: -13rem;
+  border: 2px solid black;
+  border-radius: 4px;
   color: #000000;
   background-color: var(--text);
   font-family: "Poppins", sans-serif;
@@ -616,19 +653,11 @@ html {
     border-radius: 8px;
   }
   .about-div div div {
-    width: 19rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .about-div div div svg {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 2px;
-    background-color: #09ff00ab;
-    display: flex;
-    justify-content: center;
   }
   .about-div div h3 {
     text-align: center;
@@ -645,13 +674,15 @@ html {
 
   /* My Project */
 
+  .project {
+    height: auto;
+  }
   .project-div {
     height: min-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 1rem;
-    background-color: var(--primary1);
   }
   .project h1 {
     width: 100%;
@@ -667,9 +698,10 @@ html {
     font-weight: 600;
     font-style: normal;
   }
-  .project-div div {
+  .project-card {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 44rem;
     height: auto;
@@ -695,11 +727,11 @@ html {
     width: auto;
     font-size: 1.6rem;
     text-align: center;
-    margin-top: -2rem;
     height: 1.8rem;
     background-color: #00ff0062;
   }
   .project-div div p {
+    height: 12rem;
     font-size: 2rem;
     text-align: center;
     margin-top: -0.8rem;
